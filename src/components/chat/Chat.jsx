@@ -28,7 +28,79 @@ const Chat = () => {
                     <img src="./info.png" alt="" />
                 </div>
             </div>
-            <div className="center"></div>
+            <div className="center">
+
+                <div className="message">
+                    <img src="./avatar.png" alt="" />
+                    <div className="texts">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, vel?
+                            Repellendus laudantium perferendis ex rem, saepe possimus cupiditate ut repellat,
+                            ab quam eos? Temporibus repellat aliquid illum quas delectus laudantium.
+                        </p>
+                        <span>1 min ago</span>
+                    </div>
+                </div>
+                
+                <div className="message own">
+                    <div className="texts">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, vel?
+                            Repellendus laudantium perferendis ex rem, saepe possimus cupiditate ut repellat,
+                            ab quam eos? Temporibus repellat aliquid illum quas delectus laudantium.
+                        </p>
+                        <span>1 min ago</span>
+                    </div>
+                </div>
+
+                <div className="message">
+                    <img src="./avatar.png" alt="" />
+                    <div className="texts">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, vel?
+                            Repellendus laudantium perferendis ex rem, saepe possimus cupiditate ut repellat,
+                            ab quam eos? Temporibus repellat aliquid illum quas delectus laudantium.
+                        </p>
+                        <span>1 min ago</span>
+                    </div>
+                </div>
+
+                <div className="message own">
+                    <div className="texts">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, vel?
+                            Repellendus laudantium perferendis ex rem, saepe possimus cupiditate ut repellat,
+                            ab quam eos? Temporibus repellat aliquid illum quas delectus laudantium.
+                        </p>
+                        <span>1 min ago</span>
+                    </div>
+                </div>
+
+                <div className="message">
+                    <img src="./avatar.png" alt="" />
+                    <div className="texts">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, vel?
+                            Repellendus laudantium perferendis ex rem, saepe possimus cupiditate ut repellat,
+                            ab quam eos? Temporibus repellat aliquid illum quas delectus laudantium.
+                        </p>
+                        <span>1 min ago</span>
+                    </div>
+                </div>
+
+                <div className="message own">
+                    <div className="texts">
+                        <img src="https://yt3.googleusercontent.com/Ax8l9rZhBrocbXfDgsTeIGFKPPoeTB1M7epCZBrFvwapo16DzdYaA1BEHiNCpicAfgN5zjgimA=s176-c-k-c0x00ffffff-no-rj" alt="" />
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, vel?
+                            Repellendus laudantium perferendis ex rem, saepe possimus cupiditate ut repellat,
+                            ab quam eos? Temporibus repellat aliquid illum quas delectus laudantium.
+                        </p>
+                        <span>1 min ago</span>
+                    </div>
+                </div>
+
+            </div>
             <div className="bottom">
                 <div className="icons">
                     <img src="./img.png" alt="" />
@@ -39,15 +111,15 @@ const Chat = () => {
                     placeholder="Type a message..."
                     value={text}
                     onChange={e => setText(e.target.value)}
-                    />
+                />
                 <div className="emoji">
                     <img
-                    src="./emoji.png"
-                    alt=""
-                    onClick={() => setOpen(prev => !prev)} 
+                        src="./emoji.png"
+                        alt=""
+                        onClick={() => setOpen(prev => !prev)}
                     />
                     <div className="picker">
-                    <EmojiPicker open={open} onEmojiClick={handleEmoji} />
+                        <EmojiPicker open={open} onEmojiClick={handleEmoji} />
                     </div>
                 </div>
                 <button className="sendButton">Send</button>
